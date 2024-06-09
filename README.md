@@ -35,12 +35,3 @@ Obsługuje proces konwersji na podstawie wartości wejściowej użytkownika.
 Sprawdza, czy wartość wejściowa jest liczbą arabską, czy numerałem rzymskim, i wywołuje odpowiednią funkcję konwersji.
 Aktualizuje stan wynik z odpowiednią wartością.
 
-## Elementy JSX:
-
-<div className="container">: Kontener dla całej aplikacji.
-<h1>: Nagłówek aplikacji.
-<p>: Tekst instrukcji dla użytkownika.
-<input type="text" id="numeral" value={wartoscWejsciowa} onChange={(e) => ustawWartoscWejsciowa(e.target.value)} />: Pole wejściowe do wpisania numerału rzymskiego lub liczby arabskiej przez użytkownika.
-<input type="submit" value="Konwertuj" onClick={Konwertuj} />: Przycisk do wywołania konwersji.
-<p id="wynik">{wynik}</p>: Element do wyświetlenia wyniku konwersji.
-
