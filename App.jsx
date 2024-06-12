@@ -70,7 +70,8 @@ function App() {
 
   // Funkcja obsługująca konwersję
   function Konwertuj() {
-    if (/^\d+$/.test(wartoscWejsciowa)) {
+    if (/^\d+$/.test(wartoscWejsciowa)) { // Ten śmieszny ciąg znaków "/^\d+$/" dla wyjaśnienia to mini walidacja, czy dane wprowadzone to tylko liczby
+      // .test z nazwy służy do testowania, czy jakiś ciąg pasuje do wzorca w tym przypadku wzorcem jest "/^\d+$/". .test zwraca wartość true/false
       // Jeśli wartość wejściowa jest liczbą arabską, konwertuj na rzymską
       const skonwertowanaWartosc = arabskieNaRzymskie(parseInt(wartoscWejsciowa, 10));
       ustawWynik(skonwertowanaWartosc);
